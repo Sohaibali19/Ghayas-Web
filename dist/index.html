@@ -4,35 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Ghayas-Web</title>
 </head>
 <body class="" style="font-family: 'Poppins', sans-serif;">
-    <div id="root" class ="flex flex-row">
+    <div id="root" class ="flex flex-row bg-neutral-800">
 
         <!-- This is left section -->
-        <header id="header" class ="basis-[20%] bg-neutral-800 border-r-2 border-black">
-           <div class=" flex flex-col user mt-7 items-center ">
-            <img src="ghayas.jpg" alt="" class ="rounded-full border-4  shadow-lg w-[158.4px] h-[158.4px] shadow-neutral-800  border-gray-300 mt-[8.8px] mb-[8.8px] ">
+        <header id="header" class ="basis-[23%] bg-neutral-800 border-r-2 border-neutral-900">
 
-            <h3 class ="text-[22px] text-white">GHAYAS UD DIN</h3>
-            <P class="text-green-500">FULL STACK DEVELOPER</P>
+            <button class ="bg-none border-none text-white text-[16px] py-[12px] px-[16px] fixed h-[5rem] left-[1rem] text-center top-[1.5rem] w-[5rem] border-neutral-200 z-50 font-[900]  hidden" id="btn"><i class = "fas fa-bars fa-times"></i></button>
+            <!-- picture & Name -->
+           <div class=" flex flex-col user mt-7 items-center mb-3 ">
+            <img src="pic.jpg" alt="" class ="rounded-full border-8  shadow-lg w-[158.4px] h-[160.4px] shadow-neutral-900  border-neutral-800 mt-[8.8px] mb-[8.8px] ">
+
+            <h3 class ="text-[22px] font-bold text-white">SOHAIB ALI</h3>
+            <P class="text-[#27ae60] text-[13.2px]">FULL STACK DEVELOPER</P>
            </div>
+
+           <!-- Navbar -->
+
+           <nav class="navbar flex flex-col items-center" id ="nav-bar">
+            <a href ="#Home" class ="text-white text-[17.6px] mx-[1.5rem] my-0 border-2 border-neutral-800 py-[2px] px-[32px] rounded-md   shadow-lg shadow-neutral-900 drop-shadow-[.4rem_.4rem_1rem_#CCC] mb-4">Home</a>
+            <a href ="#About" class ="text-white text-[17.6px] mx-[1.5rem] my-0 border-2 border-neutral-800 py-[2px] px-[32px] rounded-md   shadow-lg  drop-shadow-[.4rem_.4rem_1rem_#CCC] mb-4 ">About</a>
+            <a href ="#Services" class ="text-white text-[17.6px] mx-[1.5rem] my-0 border-2 border-neutral-800 py-[2px] px-[32px] rounded-md   shadow-lg  drop-shadow-[.4rem_.4rem_1rem_#CCC] mb-4 ">Services</a>
+            <a href ="#pertfolio" class ="text-white text-[17.6px] mx-[1.5rem] my-0 border-2 border-neutral-800 py-[2px] px-[32px] rounded-md   shadow-lg  drop-shadow-[.4rem_.4rem_1rem_#CCC] mb-4 ">Portfolio</a>
+            <a href ="#Contact" class ="text-white text-[17.6px] mx-[1.5rem] my-0 border-2 border-neutral-800 py-[2px] px-[32px] rounded-md   shadow-lg  drop-shadow-[.4rem_.4rem_1rem_#CCC] mb-4 ">Contact</a>
+           </nav>
+
+        </header>
+
+           <div id="menu-btn" class ="">
+            <button class ="bg-none border-none text-white text-[16px] py-[12px] px-[16px] fixed h-[5rem] left-[1rem] text-center top-[1.5rem] w-[5rem] border-neutral-200 z-[1000] font-[900] hidden " id="btn"><i class = "fas fa-bars"></i></button>
+           </div>
+
+           <div id="theme-toggler" class = "">
+            <button class ="bg-none border-none text-white text-[2rem]  font-[900] fixed h-[5rem] w-[5rem] right-[2rem] top-[1.5rem] rounded-[50%]  bg-[#222] border-[.1rem_solid_rgba(0,0,0,.4)] z-[1000]" id="btn">
+                <a class="button is-primary is-rounded inner-switch is-outlined">
+                    <i class = "fas fa-moon fa-sun"></i>
+                </a>
+            </button>
+           </div>
+
+
             
            
            
            
 
-        </header>
+        
 
-        <div id="main-section" class="basis-[80%] bg-neutral-900">
-            <section class="text-center">
-                <h3 class="text-white text-center mt-20 text-[50px] 	font-weight: 800 font-extrabold" > GHAYAS UD DIN </h3>
-                <h1 class="  text-green-500">Full Stack Developer / MERN Stack Developer</h1>
-                <a href="https://www.w3schools.com/css/css_margin.asp" class="btn text-white" download="">download CV</a>
+        <div id="main-section" class="basis-[77%] bg-neutral-800 items-center">
+            <!-- Home section -->
+            <section class=" flex flex-col  text-center  items-center p-[2rem]" id="home">
+                <div class="content">
+                <h3 class="text-white  mt-16  text-[6rem] font-bold mb-0 pb-0 "> SOHAIB ALI </h3>
+
+                <h1 class=" text-[23px]  text-[#27ae60]">Full Stack Developer / MERN Stack Developer</h1>
+                <a href="" class="btn text-white text-[1.7rem] mt-[8.8px]  border-2 border-neutral-800 py-[8.8px] px-[30.8px] rounded-md   shadow-lg  drop-shadow-[.4rem_.4rem_1rem_#CCC]   " >Download CV</a>
+                </div>
+                
             </section>
+
+            <div class="share rounded-[0.2rem] font-[2rem] p-[8.8px] relative top-[5rem] w-[25%] flex justify-center" id="share" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <a href="" class="fab fa-facebook-f text-white h-[5rem] w-[5rem] text-center hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                    
+                </a>
+                 <a href="" class="fab fa-twitter text-white " >   
+                </a>
+                <a href="" class="fab fa-instagram text-white hover:bg-[#27ae60]" >
+                    
+                </a>
+                <a href="" class="fab fa-linkdin text-white hover:bg-[#27ae60]" >
+                    
+                </a>
+                <a href="" class="fab fa-pinterest text-white hover:bg-[#27ae60]">
+                    
+                </a>
+            </div>
         </div>
 
-    </div>
+
+</div>
     
+
+    <script src="\src\input.js"></script>
 </body>
 </html>
