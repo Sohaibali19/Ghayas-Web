@@ -602,6 +602,18 @@ video {
   top: 6rem;
 }
 
+.right-\[4rem\] {
+  right: 4rem;
+}
+
+.top-\[10rem\] {
+  top: 10rem;
+}
+
+.right-\[3rem\] {
+  right: 3rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -776,6 +788,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -904,6 +920,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -950,6 +970,10 @@ video {
 
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-\[2rem\] {
+  gap: 2rem;
 }
 
 .rounded-3xl {
