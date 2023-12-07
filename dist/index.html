@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Ghayas-Web</title>
+    <title >Sohaib-Web</title>
 </head>
 <body class="" style="font-family: 'Poppins', sans-serif;">
     <div id="root" class ="flex flex-row bg-neutral-800">
@@ -164,34 +164,71 @@
         </section>
 
         <!-- my services section -->
-        <section class="services  mt-[1rem] min-h-[100vh] p-[2rem] flex flex-col" id="services">
+        <section class="services  mt-[1rem] min-h-[100vh] px-[1rem] py-2 flex flex-col" id="services">
            
             <h1 class="heading text-[44px] text-white font-extrabold text-center mb-[1.5rem] pb-[17.6px]">
               My <span class ="text-[#27ae60]">Services</span>
             </h1>
 
-        <div class="box-container flex   gap-[2rem] items-start justify-start" id="box-container">
-            <div class="box text-white relative rounded-lg" id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                <i class = "fa-brands fa-react  bg-none relative text-white text-center pt-[10px] text-[24px]  font-[900]  h-[3rem] w-[3rem]  rounded-full  z-[1000]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
-                <h3>ReactJS</h3>
-                <p>Developing a responsive and real-time web application using React.js and Socket.IO client library. Building a dynamic user interface with React.js to ensure optimal viewing experience across devices. Leveraging Socket.IO for real-time communication, enabling live updates and interactive features in the web application.</p>
-
-
+        <div class="box-container flex   flex-wrap gap-[1rem]  w-full h-full" id="box-container">
+            <!-- react box -->
+            <div class="box text-white  relative rounded-lg p-[17.6px]  w-[32%] h-[50%] hover:bg-[#27ae60]" id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <i class = "fa-brands fa-react  bg-none relative text-white text-center  pb-[5rem] text-[3rem]  font-[400]  h-[2rem] w-[2rem]  rounded-full  z-[1000]  "  ></i>
+                <h3 class="text-[24px] pb-[1rem] font-bold">ReactJS</h3>
+                <p class ="text-[15px]  text-[#dddddd] leading-[1.8rem] pb-7 ">Developing a responsive and real-time web application using React.js and Socket.IO client library. Building a dynamic user interface with React.js to ensure optimal viewing experience across devices. Leveraging Socket.IO for real-time communication, enabling live updates and interactive features in the web application.</p>
             </div>
-
-            <div class="box text-white relative rounded-lg" id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                <i class = "fa-brands fa-node-js  bg-none relative text-white text-center pt-[10px] text-[24px]  font-[900]  h-[3rem] w-[3rem]  rounded-full  z-[1000]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
-                <h3>ReactJS</h3>
-                <p>Developing a responsive and real-time web application using React.js and Socket.IO client library. Building a dynamic user interface with React.js to ensure optimal viewing experience across devices. Leveraging Socket.IO for real-time communication, enabling live updates and interactive features in the web application.</p>
-
-
+            <!-- nodejs box -->
+            <div class="box text-white  relative rounded-lg p-[17.6px] w-[32%] h-[50%] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <i class = "fa-brands fa-node-js  bg-none relative text-white text-center  pb-[5rem] text-[3rem]  font-[400]  h-[2rem] w-[2rem]  rounded-full  z-[1000]"></i>
+                <h3 class="text-[24px] pb-[1rem] font-bold">NodeJS</h3>
+                <p class ="text-[15px]  text-[#dddddd] leading-[1.8rem] pb-7 ">Building robust web applications with Node.js and Express, leveraging the power of JavaScript on the server-side. Creating scalable APIs, handling routing, middleware, and database interactions for seamless application development. Empowering developers to build fast, efficient, and feature-rich web applications using the Node.js and Express framework.</p>
             </div>
-            
+            <!-- responsive design -->
+            <div class="box text-white  relative rounded-lg p-[17.6px] w-[32%] h-[50%] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <i class = "fas fa-mobile  bg-none relative text-white text-center  pb-[5rem] text-[3rem]  font-[400]  h-[3rem] w-[3rem]  rounded-full  z-[1000]  "  ></i>
+                <h3 class="text-[24px] pb-[2rem] font-bold">Responsive Design</h3>
+                <p class ="text-[15px]  text-[#dddddd] leading-[1.8rem] pb-7 ">Creating visually stunning and user-friendly interfaces that seamlessly adapt to different screen sizes and devices for an optimal user experience.</p>
+            </div>
+            <!-- python box -->
+            <div class="box text-white  relative rounded-lg p-[17.6px] w-[32%] h-[45%]" id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <i class = "fa-brands fa-python  bg-none relative text-white text-center  pb-[5rem] text-[3rem]  font-[400]  h-[3rem] w-[3rem]  rounded-full  z-[1000]  "  ></i>
+                <h3 class="text-[24px] pb-[1rem] font-bold">Python</h3>
+                <p class ="text-[15px]  text-[#dddddd] leading-[1.8rem] pb-6 ">Building robust web applications with Python's versatile frameworks - Django, Flask, and FastAPI. Delivering scalable and efficient solutions for seamless user experiences and accelerated development processes. Empowering businesses to leverage the power of Python for their web development needs. </p>
+            </div>
+            <!-- AI -->
+            <div class="box text-white  relative rounded-lg p-[17.6px] w-[32%] h-[45%]" id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <i class = "fa-solid fa-brain  bg-none relative text-white text-center  pb-[5rem] text-[3rem]  font-[400]  h-[3rem] w-[3rem]  rounded-full  z-[1000]  "  ></i>
+                <h3 class="text-[24px] pb-[1rem] font-bold">AI</h3>
+                <p class ="text-[15px]  text-[#dddddd] leading-[1.8rem] pb-6 ">Embracing the potential of Artificial Intelligence to revolutionize industries, enhance decision-making, and create intelligent systems that can learn, adapt, and improve over time.  </p>
+            </div>
+            <!-- wordPress -->
+            <div class="box text-white  relative rounded-lg p-[17.6px] w-[32%] h-[45%]" id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <i class = "fab fa-wordpress  bg-none relative text-white text-center  pb-[5rem] text-[3rem]  font-[400]  h-[3rem] w-[3rem]  rounded-full  z-[1000]  "  ></i>
+                <h3 class="text-[24px] pb-[1rem] font-bold">WordPress</h3>
+                <p class ="text-[15px]  text-[#dddddd] leading-[1.8rem] pb-6 ">Unlocking the power of WordPress to create stunning websites, blogs, and online stores with ease and flexibility. Empowering individuals and businesses to establish a strong online presence and engage their audience effectively</p>
+            </div>
         </div>
 
 
         </section>
 
+        <!-- portfolio section -->
+        
+        <section id="portfolio" class="portfolio mt-[1rem] min-h-[100vh] px-[1rem] py-2 flex flex-col"">
+            
+           
+                <h1 class="heading text-[44px] text-white font-extrabold text-center mb-[1.5rem] pb-[17.6px]">
+                  My <span class ="text-[#27ae60]">PORTFOLIO</span>
+                </h1>
+    
+            <div class="box-container flex   flex-wrap gap-[1rem]  w-full h-full" id="box-container">
+                <div class="box text-white  relative rounded-lg p-[17.6px] w-[40%] h-[50%] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                    <img herf="" alt="">
+                    <div class="content">
+                        <h3 class="text-[24px] pb-[2rem] font-bold text-center">ReactJS</h3>
+                    </div>
+            </div>
+        </section>
     </div>
 
 
