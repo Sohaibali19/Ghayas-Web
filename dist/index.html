@@ -8,32 +8,32 @@
     <title >Sohaib-Web</title>
 </head>
 <body class="" style="font-family: 'Poppins', sans-serif;">
-    <div id="root" class ="flex flex-row bg-neutral-800">
+    <div id="root" class ="flex flex-row bg-neutral-800 relative">
 
         <!-- This is left section -->
-        <header id="header" class ="basis-[24%] h-full  bg-neutral-800  ">
+        <header id="header" class ="basis-[24%] fixed p-[1.7rem] bg-neutral-800 ">
 
-            <button class ="bg-none border-none text-white text-[16px] py-[12px] px-[16px] fixed h-[5rem] left-[1rem] text-center top-[1.5rem] w-[5rem] border-neutral-200 z-50 font-[900]  hidden" id="btn"><i class = "fas fa-bars fa-times"></i></button>
+            <button class ="bg-none border-none text-white text-[16px] py-[0px] px-[0px] fixed h-[5rem] left-[0rem] text-center top-[0rem] w-[5rem] border-neutral-200 z-50 font-[900]  lg:invisible sm:visible" id="btn"><i class = "fas fa-bars "></i></button>
             <!-- picture & Name -->
-           <div class=" flex flex-col user mt-7 items-center mb-3 ">
-            <img src="pic.jpg" alt="" class ="rounded-full border-8  shadow-lg w-[158.4px] h-[160.4px]  mt-[8.8px] mb-[8.8px] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+           <div class=" flex flex-col user mt-3 items-center mb-[.15rem] sm:invisible lg:visible">
+            <img src="pic.jpg" alt="" class ="rounded-full border-8  shadow-lg w-[158.4px] h-[160.4px]  mt-[8.8px] mb-[8.8px] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
 
-            <h3 class ="text-[24px] font-bold  mt-2 text-white">SOHAIB ALI</h3>
+            <h3 class ="text-[24px] font-bold  mt-[.15rem] text-white">SOHAIB ALI</h3>
             <P class="text-[#27ae60] text-[13.2px]">FULL STACK DEVELOPER</P>
            </div>
 
            <!-- Navbar -->
 
-           <nav class="navbar flex flex-col items-center" id ="nav-bar">
-            <a href ="#Home" class ="text-white text-[20px] relative text-center w-[235.15px] h-[50px] mx-0 my-[13.2px]  p-[6.16px] rounded-3xl   shadow-lg  mb-1 hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff; hover{black:#444, lighting-color: #777, background-color: #e6e6e6;border: .1rem solid rgba(0,0,0,0.2),box-shadow: .4rem .4rem 1rem #ccc,-.4rem -.4rem 1rem #fff;}">Home</a>
+           <nav class="navbar flex flex-col items-center lg:visible sm:invisible" id ="nav-bar">
+            <a href ="#Home" class ="text-white text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-[.15rem] hover:text-[#27ae60]  " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff; " hover="{black:#444, lighting-color: #777, background-color: #e6e6e6; border: .1rem solid rgba(0,0,0,0.2),box-shadow: .4rem .4rem 1rem #ccc,-.4rem -.4rem 1rem #fff;}">Home</a>
             
-            <a href ="#About" class ="text-white text-[24px] relative text-center w-[235.15px] h-[50px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-1" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">About</a>
+            <a href ="#About" class ="text-white text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-[.15rem] hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">About</a>
 
-            <a href ="#Services" class ="text-white text-[24px] relative text-center w-[235.15px] h-[50px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-1 " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">Services</a>
+            <a href ="#Services" class ="text-white text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-[.15rem] hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">Services</a>
 
-            <a href ="#pertfolio" class ="text-white text-[24px] relative text-center w-[235.15px] h-[50px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-1" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">Portfolio</a>
+            <a href ="#pertfolio" class ="text-white text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-[.15rem] hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">Portfolio</a>
 
-            <a href ="#Contact" class ="text-white text-[24px] relative text-center w-[235.15px] h-[50px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-1" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">Contact</a>
+            <a href ="#Contact" class ="text-white text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-[.15rem] hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">Contact</a>
            </nav>
 
         </header>
@@ -43,13 +43,13 @@
            </div>
 
            <div id="theme-toggler" class = "">
-                    <i class = "fas fa-moon fa-sun bg-none  text-white text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] right-[1.5rem] top-[1.5rem] rounded-[50%]   z-[1000]" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>    
+                    <i class = "fas fa-moon fa-sun bg-none  text-white text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] right-[1.5rem] top-[1.5rem] rounded-[50%]   z-[1000]" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>    
            </div>
 
 
             
            
-        <div id="main-section" class="basis-[77%] bg-neutral-800 items-center flex flex-col border-l-2 border-[#222]">
+        <div id="main-section" class="basis-[77%]  ml-[298px]  bg-neutral-800  flex flex-col border-l-2 border-[#222]">
             <!-- Home section -->
             <section class=" flex flex-col  text-center  items-center p-[2rem] mt-28 " id="home">
                 <div class="content flex flex-col items-center">
@@ -80,14 +80,14 @@
         </section>
 
         <!-- About Me section -->
-        <section id='abt-s' class="top-[6rem] mt-[6rem] min-h-[100vh] p-[2rem] flex flex-col ">
+        <section id='abt-us' class="top-[6rem] mt-[6rem] min-h-[100vh] p-[2rem] flex flex-col ">
             <h1 class="heading text-[44px] text-white font-extrabold text-center mb-[1.5rem] pb-[17.6px]">
                 <span class ="text-[#27ae60]">ABOUT</span> ME
             </h1>
 
             <div class="row flex gap-[1rem] text-white ">
                 <!-- container boxes  first two-->
-                <div class="box-container flex flex-col gap-4 text-center mt-12 ">
+                <div class="box-container flex flex-col gap-4 text-center mt-12 pt-3">
 
                     <div class="box p-[17.6px] flex flex-col rounded-lg" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                         <h3 class="text-[44px]  font-extrabold">2+</h3>
@@ -102,7 +102,7 @@
 
                 </div>
                 <!-- container boxes  second two-->
-                <div class="box-container flex flex-col gap-4 text-center mt-12 ">
+                <div class="box-container flex flex-col gap-4 text-center mt-12  pt-3">
                     <div class="box p-[17.6px] flex flex-col rounded-lg  " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                         <h3 class="text-[44px] font-extrabold">450+</h3>
                         <p class ="text-[14.6px] text-[#dddddd] py-[4.4px] px-0">Satisfied Clients</p>
