@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,21 @@
     <title >Sohaib-Web</title>
 </head>
 <body class="" style="font-family: 'Poppins', sans-serif;">
-    <div id="root" class ="flex flex-row bg-neutral-800 relative">
+    <div id="root" class ="flex dark:bg-neutral-800 bg-white m-0 p-0 relative ">
 
         <!-- This is left section -->
-        <header id="header" class ="basis-[24%] fixed p-[1.7rem] bg-neutral-800 ">
+        <header id="header" class ="lg:basis-[24%] sm:basis-[0%] fixed p-[1.7rem] dark:bg-neutral-800  bg-white sm:invisible lg:visible ">
 
-            <button class ="bg-none border-none text-white text-[16px] py-[0px] px-[0px] fixed h-[5rem] left-[0rem] text-center top-[0rem] w-[5rem] border-neutral-200 z-50 font-[900]  lg:invisible sm:visible" id="btn"><i class = "fas fa-bars "></i></button>
+           <div id="menu-btn">
+
+            <i class = "fas fa-bars bg-none  text-white text-center pt-[10px] text-[20px]  font-[900] fixed h-[3rem] w-[3rem] lg:left-[1.5rem] sm:left-1 lg:top-[1.5rem]  sm:top-1 rounded-[50%]   z-50 lg:invisible sm:visible" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
+        </div>
+
             <!-- picture & Name -->
            <div class=" flex flex-col user mt-3 items-center mb-[.15rem] sm:invisible lg:visible">
-            <img src="pic.jpg" alt="" class ="rounded-full border-8  shadow-lg w-[158.4px] h-[160.4px]  mt-[8.8px] mb-[8.8px] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+            <img src="pic.jpg" alt="" class ="rounded-full border-8  shadow-lg w-[158.4px] h-[160.4px]  mt-[8.8px] mb-[8.8px] dark:bg-[#222] bg-white " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
 
-            <h3 class ="text-[24px] font-bold  mt-[.15rem] text-white">SOHAIB ALI</h3>
+            <h3 class ="text-[24px] font-bold  mt-[.15rem] dark:text-white text-black">SOHAIB ALI</h3>
             <P class="text-[#27ae60] text-[13.2px]">FULL STACK DEVELOPER</P>
            </div>
 
@@ -38,42 +42,48 @@
 
         </header>
 
-           <div id="menu-btn" class ="hidden">
-                <i class = "fas fa-bars bg-none border-none text-white  text-[16px] py-[8px] px-[8px] fixed h-[2rem] left-[1rem] text-center top-[1.5rem] w-[2rem]  z-[1000] font-[900] hidden" id="menu-bar" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
+           <div id="menu-cross-btn" class ="hidden">
+                <i class = "fas fa-bars fa-times bg-none border-none text-white  text-[16px] pt-[10px]   fixed h-[3rem] lg:left-[1rem] text-center lg:top-[1.5rem] w-[3rem] sm:top-1 sm:left-0  z-[1000] rounded-[50%]  hidden" id="menu-bar" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
            </div>
 
-           <div id="theme-toggler" class = "">
-                    <i class = "fas fa-moon fa-sun bg-none  text-white text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] right-[1.5rem] top-[1.5rem] rounded-[50%]   z-[1000]" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>    
+           <div id="theme-toggler-m" class = "sun  ">
+                    <i class = "fas fa-moon fa-sun  bg-none  text-white text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] lg:right-[1.5rem] sm:right-0 lg:top-[1.5rem]  sm:top-0 rounded-[50%] hover:cursor-pointer  hover:text-[#27ae60]     z-[1000] "  style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
+                    </i>    
            </div>
+
+           <div id="theme-toggler-s" class = "moon ">
+            <i class = "fas fa-moon  bg-none  text-black text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] lg:right-[1.5rem] sm:right-0 lg:top-[1.5rem]  sm:top-0 rounded-[50%]   z-[1000] hover:cursor-pointer  hover:text-[#27ae60]" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #ccc,-.4rem -.4rem 1rem #fff; background:#e6e6e6 ; border: .1rem solid rgba(0,0,0,0.2); inset: .4rem .4rem 1rem #ccc inset,-.4rem -.4rem 1rem #fff inset; lighting-color: #777; black:#444" >
+                </i>    
+   </div>
 
 
             
            
-        <div id="main-section" class="basis-[77%]  ml-[298px]  bg-neutral-800  flex flex-col border-l-2 border-[#222]">
+        <div id="main-section" class="lg:basis-[77%] sm:basis-[100%]  lg:ml-[298px] sm:ml-[0px]  dark:bg-neutral-800 bg-white  flex flex-col items-center lg:border-l-2 sm:border-l-0 border-[#222]">
             <!-- Home section -->
-            <section class=" flex flex-col  text-center  items-center p-[2rem] mt-28 " id="home">
+            <section class=" flex flex-col  text-center   items-center lg:p-[2rem] sm:p-0 mt-28 " id="home">
                 <div class="content flex flex-col items-center">
-                <h3 class="text-white   text-[5rem] font-bold "> SOHAIB ALI</h3>
+                <h3 class="dark:text-white text-[#444444]   lg:text-[5rem] sm:text-[61.6px] font-extrabold "> SOHAIB ALI</h3>
 
-                <h1 class=" text-[22px] absolute mt-[6.5rem] text-[#27ae60]">Full Stack Developer / MERN Stack Developer</h1>
-                <a href="" id="d-cv" class=" text-white text-[1rem] relative  mt-[30px]  py-[8.8px] px-[32.8px] rounded-md    hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff;">Download CV</a>
+                <h1 class=" lg:text-[22px] sm:text-[15.6px] absolute lg:mt-[6.5rem] sm:mt-[4.5rem] text-[#27ae60]">Full Stack Developer / MERN Stack Developer</h1>
+                <a href="" id="d-cv" class=" text-white lg:text-[1rem] sm:text-[0.75rem] relative  lg:mt-[30px] sm:mt-[16px]  lg:py-[8.8px] sm:py-[5.8px] px-[32.8px] rounded-md    hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333; lighting-color: #ddd; black:#fff; hover{inset: .4rem .4rem 1rem #ccc inset,-.4rem -.4rem 1rem #fff}">Download CV</a>
                 </div>
                 
             
 
-            <div class="share rounded-[0.3rem] font-[2rem] p-[8.8px] relative top-[6rem]   flex justify-center" id="share" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                <a href="" id="facebook" class="fab fa-facebook-f text-white h-[3rem] w-[3rem] text-center pt-4 hover:text-[#27ae60] m-[0.5rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+            <div class="share flex justify-center rounded-[0.3rem] font-[2rem] p-[8.8px] relative top-[6rem]   " id="share" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <a href="" id="facebook" class="fab fa-facebook-f text-white lg:h-[3rem] lg:w-[3rem] sm:h-[2.5rem] sm:w-[2.5rem] text-center lg:pt-4 sm:pt-3 hover:text-[#27ae60] lg:m-[0.5rem] sm:m-[.25rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                     
                 </a>
-                 <a href="" id="twitter" class="fab fa-twitter  text-white h-[3rem] w-[3rem] text-center pt-4 hover:text-[#27ae60] m-[0.5rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >   
+                 <a href="" id="twitter" class="fab fa-twitter  text-white hlg:h-[3rem] lg:w-[3rem] sm:h-[2.5rem] sm:w-[2.5rem] text-center lg:pt-4 sm:pt-3 hover:text-[#27ae60] lg:m-[0.5rem] sm:m-[.25rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >   
                 </a>
-                <a href="" id="insta" class="fab fa-instagram  text-white h-[3rem] w-[3rem] text-center pt-4 hover:text-[#27ae60] m-[0.5rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
+                <a href="" id="insta" class="fab fa-instagram  text-white lg:h-[3rem] lg:w-[3rem] sm:h-[2.5rem] sm:w-[2.5rem] text-center lg:pt-4 sm:pt-3 hover:text-[#27ae60] lg:m-[0.5rem] sm:m-[.25rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
                     
                 </a>
-                <a href="" id="linkdin" class="fab fa-linkedin  text-white h-[3rem] w-[3rem] text-center pt-4 hover:text-[#27ae60] m-[0.5rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
+                <a href="" id="linkdin" class="fab fa-linkedin  text-white lg:h-[3rem] lg:w-[3rem] sm:h-[2.5rem] sm:w-[2.5rem] text-center lg:pt-4 sm:pt-3 hover:text-[#27ae60] lg:m-[0.5rem] sm:m-[.25rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
                     
                 </a>
-                <a href="" id="pint" class="fab fa-pinterest  text-white h-[3rem] w-[3rem] text-center pt-4 hover:text-[#27ae60] m-[0.5rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                <a href="" id="pint" class="fab fa-pinterest  text-white lg:h-[3rem] lg:w-[3rem] sm:h-[2.5rem] sm:w-[2.5rem] text-center lg:pt-4 sm:pt-3 hover:text-[#27ae60] lg:m-[0.5rem] sm:m-[.25rem] font-[400] rounded-[0.5rem] " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                     
                 </a>
             </div>
@@ -81,45 +91,46 @@
 
         <!-- About Me section -->
         <section id='abt-us' class="top-[6rem] mt-[6rem] min-h-[100vh] p-[2rem] flex flex-col ">
-            <h1 class="heading text-[44px] text-white font-extrabold text-center mb-[1.5rem] pb-[17.6px]">
+            <h1 class="heading lg:text-[44px] sm:text-[32px] text-white font-extrabold text-center mb-[1.5rem] pb-[17.6px]">
                 <span class ="text-[#27ae60]">ABOUT</span> ME
             </h1>
 
-            <div class="row flex gap-[1rem] text-white ">
+            <div class="row flex lg:flex-row sm:flex-col-reverse   gap-[1rem] text-white ">
                 <!-- container boxes  first two-->
-                <div class="box-container flex flex-col gap-4 text-center mt-12 pt-3">
+                <div class="box-container basis-[50%] flex flex-wrap gap-2 text-center  mt-6 py-8 px-0">
 
-                    <div class="box p-[17.6px] flex flex-col rounded-lg" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                        <h3 class="text-[44px]  font-extrabold">2+</h3>
-                        <p class ="text-[14.6px] text-[#dddddd] py-[4.4px] px-0">Years Of Experience</p>
+                    <div class="box px-[42.6px]   relative  flex-col rounded-lg" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                        <h3 class="text-[44px]  font-extrabold mt-8">2+</h3>
+                        <p class ="text-[14.6px] text-[#dddddd]  px-0">Years Of Experience</p>
                     </div>
 
-                    <div class="box p-[17.6px] px-[3rem] flex flex-col rounded-lg" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                        <h3 class="text-[44px] font-extrabold">190+</h3>
-                        <p class ="text-[14.6px] text-[#dddddd] py-[4.4px] px-0">Working Hours</p>
+                    <div class="box  px-[42.6px] relative flex flex-col rounded-lg" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                        <h3 class="text-[44px] font-extrabold mt-8">190+</h3>
+                        <p class ="text-[14.6px] text-[#dddddd]  px-0">Working Hours</p>
                     </div>
 
 
-                </div>
+                
                 <!-- container boxes  second two-->
-                <div class="box-container flex flex-col gap-4 text-center mt-12  pt-3">
-                    <div class="box p-[17.6px] flex flex-col rounded-lg  " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                        <h3 class="text-[44px] font-extrabold">450+</h3>
-                        <p class ="text-[14.6px] text-[#dddddd] py-[4.4px] px-0">Satisfied Clients</p>
+                
+                    <div class="box px-[50.6px] relative flex flex-col rounded-lg  " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                        <h3 class="text-[44px] font-extrabold mt-8">450+</h3>
+                        <p class ="text-[14.6px] text-[#dddddd]  px-0">Satisfied Clients</p>
                     </div>
 
-                    <div class="box p-[17.6px] px-[3.5rem] flex flex-col rounded-lg " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                        <h3 class="text-[44px] font-extrabold">10+</h3>
-                        <p class ="text-[14.6px] text-[#dddddd] py-[4.4px] px-0">Awards Won</p>
+                    <div class="box px-[56.6px] relative flex flex-col rounded-lg  " style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                        <h3 class="text-[44px] font-extrabold mt-8">10+</h3>
+                        <p class ="text-[14.6px] text-[#dddddd] ] px-0">Awards Won</p>
                     </div>
 
 
-                </div>
+                
+            </div>
                 <!-- Introduction -->
-                <div class="content text-white flex flex-col text-left gap-1">
-                    <h3 class=" text-[30.8px] font-extrabold text-center">I am <span class="text-[#27ae60]">Sohaib</span></h3>
-                    <p class="leading-[1.8] mb-2 ">I have extensive expertise in MERN Stack Development, which includes continuous personal learning. I am proficient in fundamental front-end languages such as HTML, CSS, and JavaScript. In addition, I have extensive experience working with JavaScript frameworks including React.js and React Native. I am also highly proficient in server-side languages such as Node.js, PHP, and Python using frameworks such as Django, Express.js, and Flask. My skills also include optimizing application responsiveness and working with RESTful APIs in Node.js. I am an ideal candidate for working with your company/team.</p>
-                   <button id="contact-btn" class=" text-white text-[14.96px]  mt-[8.8px]  w-[35%] py-[8.8px] px-[30.8px] rounded-lg  hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff;">Contact Me</button>  
+                <div class="content basis-[50%] text-white flex flex-col text-left gap-1">
+                    <h3 class=" lg:text-[30.8px] sm:text-[24px] font-extrabold lg:text-center sm:text-left">I am <span class="text-[#27ae60]">Sohaib</span></h3>
+                    <p class="lg:leading-[1.8] lg:text-[17.6px] mb-2 sm:leading-[1.8] sm:text-[12.8px] ">I have extensive expertise in MERN Stack Development, which includes continuous personal learning. I am proficient in fundamental front-end languages such as HTML, CSS, and JavaScript. In addition, I have extensive experience working with JavaScript frameworks including React.js and React Native. I am also highly proficient in server-side languages such as Node.js, PHP, and Python using frameworks such as Django, Express.js, and Flask. My skills also include optimizing application responsiveness and working with RESTful APIs in Node.js. I am an ideal candidate for working with your company/team.</p>
+                   <button id="contact-btn" class=" text-white text-[14.96px]  mt-[8.8px]  lg:w-[35%] sm:w-[20%] lg:py-[8.8px] sm:py-[4.4px] lg:px-[30.8px] sm:px-[12px] rounded-lg  hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff;">Contact Me</button>  
                 </div>
 
             </div>
@@ -222,24 +233,24 @@
                 </h1>
     
             <div class="box-container flex   flex-wrap gap-[1rem]  mt-[1rem] w-full h-full relative" id="box-container">
-
-                <div class="box text-white  relative rounded-lg p-[17.6px] w-[297px] h-[15rem] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
-                    <img herf="ghayas.jpg"  class ="w-full h-full  relative  text-[24px] border-none font-bold text-center opacity-100 hover:opacity-0" alt="">
+                <!-- react box -->
+                <div class="box   relative rounded-lg p-[17.6px] w-[297px] h-[15rem] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
+                    <img herf=""  class ="w-full h-full  relative   border-none font-bold text-center opacity-100 hover:opacity-0" alt="">
                     <div class="content absolute w-[291px] h-[14rem] bottom-4 right-1 transition-[.5s] bg-[#222] opacity-0 hover:opacity-100">
-                        <h3 class="text-[24px] absolute  pt-20 pl-[6rem] font-bold text-center">(ReactJS)</h3>
+                        <h3 class="text-[24px] absolute  pt-20 pl-[6rem] text-white font-bold text-center">(ReactJS)</h3>
                     </div>
                 </div>
 
                 <div class="box text-white  relative rounded-lg p-[17.6px] w-[297px] h-[15rem] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                     <img herf="ghayas.jpg"  class ="w-full h-full  relative  text-[24px]  font-bold text-center opacity-100 hover:opacity-0" alt="">
                     <div class="content absolute w-[291px] h-[14rem] bottom-4 right-1 transition-[.5s] bg-[#222] opacity-0 hover:opacity-100">
-                        <h3 class="text-[24px] absolute  pt-20 pl-[6rem] font-bold text-center">Back-End Only</h3>
+                        <h3 class="text-[24px] absolute  pt-20 pl-[4rem] font-bold text-center">Back-End Only</h3>
                     </div>
                 </div>
                 <div class="box text-white  relative rounded-lg p-[17.6px] w-[297px] h-[15rem] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                     <img herf="ghayas.jpg"  class ="w-full h-full  relative  text-[24px]  font-bold text-center opacity-100 hover:opacity-0" alt="">
                     <div class="content absolute w-[291px] h-[14rem] bottom-4 right-1 transition-[.5s] bg-[#222] opacity-0 hover:opacity-100">
-                        <h3 class="text-[24px] absolute  pt-20 pl-[6rem] font-bold text-center">(ExpressJS)</h3>
+                        <h3 class="text-[24px] absolute  pt-20 pl-[5rem] font-bold text-center">(ExpressJS)</h3>
                     </div>
                 </div>
                 <div class="box text-white  relative rounded-lg p-[17.6px] w-[297px] h-[15rem] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
@@ -257,7 +268,7 @@
                 <div class="box text-white  relative rounded-lg p-[17.6px] w-[297px] h-[15rem] " id="box" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
                 <img herf="ghayas.jpg"  class ="w-full h-full  relative  text-[24px]  font-bold text-center opacity-100 hover:opacity-0" alt="">
                 <div class="content absolute w-[291px] h-[14rem] bottom-4 right-1 transition-[.5s] bg-[#222] opacity-0 hover:opacity-100">
-                <h3 class="text-[24px] absolute  pt-[5.5rem] pl-[4rem] font-bold text-center">Linear Regression</h3>
+                <h3 class="text-[24px] absolute  pt-[5.5rem] pl-[2.75rem] font-bold text-center">Linear Regression</h3>
                 </div>
         </div>
         </section>
