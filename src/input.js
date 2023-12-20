@@ -53,6 +53,47 @@ themeCheck();
 
 
 
+// toggle menu
+
+var btn = document.getElementById('menu-btn').addEventListener('click', ftn);
+  var btn2 = document.getElementById('menu-cross-btn').addEventListener('click', ftn1);
+  
+  let navbar = document.getElementById('nav-bar');
+ function ftn(){
+  if(btn.style.dispaly != 'none'){
+    btn.style.display = "none";
+    btn2.style.display = 'block';
+    navbar.style.display = 'block';
+    
+}
+else{
+    btn.style.display = "block";
+    btn2.style.display = 'none';
+    navbar.style.display = 'none';
+
+}
+
+ } 
+
+ function ftn1(){
+  let btn = document.getElementById('menu-btn');
+  let btn2 = document.getElementById('menu-cross-btn');
+  let navbar = document.getElementById('nav-bar');
+  if(btn2.style.display != 'none'){
+      btn2.style.display = "none";
+      navbar.style.display = "none";
+      btn.style.display = 'block';
+      
+  }else{
+      btn2.style.display = "block";
+      navbar.style.display = "block";
+      btn.style.display = 'none';
+  }
+
+ }
+
+
+
 
 
 
