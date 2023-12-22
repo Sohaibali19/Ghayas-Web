@@ -10,16 +10,38 @@
 <body class="" style="font-family: 'Poppins', sans-serif;">
     <div id="root" class ="flex dark:bg-neutral-800 bg-white m-0 p-0 relative ">
 
-        <!-- This is left section -->
-        <header id="header" class ="lg:basis-[24%] sm:basis-[0%] fixed p-[1.7rem] dark:bg-neutral-800  bg-white sm:invisible lg:visible ">
 
-           <div id="menu-btn">
-
-            <i class = "fas fa-bars bg-none  text-white text-center pt-[10px] text-[20px]  font-[900] fixed h-[3rem] w-[3rem] left-[1.5rem]  top-[1.5rem]   rounded-[50%]   z-50 lg:invisible sm:visible" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
+        <!-- menu button -->
+        <div id="menu-btn" type="button" >
+            <i class = "fa fa-bars bg-none  text-white text-center pt-[10px] text-[20px]  font-[900] fixed h-[3rem] w-[3rem] left-[1.5rem]  top-[1.5rem]   rounded-[50%]   z-50 lg:invisible sm:visible" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" onclick="ChangeIcon(this)"></i>
         </div>
 
+        <!-- cross button -->
+
+        
+
+       <!-- Theme sun -->
+
+       <div id="theme-toggler-m" class = "sun  ">
+                <i class = "fas fa-moon fa-sun  bg-none  text-white text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] right-[1.5rem]  top-[1.5rem]   rounded-[50%] hover:cursor-pointer  hover:text-[#27ae60]     z-[1000] "  style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
+                </i>    
+       </div>
+
+           <!-- Theme moon -->
+       <div id="theme-toggler-s" class = "moon ">
+        <i class = "fas fa-moon  bg-none  text-black text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] lg:right-[1.5rem] sm:right-0 lg:top-[1.5rem]  sm:top-0 rounded-[50%]   z-[1000] hover:cursor-pointer  hover:text-[#27ae60] " id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #ccc,-.4rem -.4rem 1rem #fff; background:#e6e6e6 ; border: .1rem solid rgba(0,0,0,0.01); inset: .4rem .4rem 1rem #ccc inset,-.4rem -.4rem 1rem #fff inset; lighting-color: #777; black:#444" >
+            </i>    
+        </div>
+
+
+        <!-- This is left section -->
+        <header id="header" class ="basis-[24%]  fixed p-[1.7rem]   dark:bg-neutral-800  bg-white sm:hidden lg:block z-2000" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333;  border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"
+        >
+
+           
+
             <!-- picture & Name -->
-           <div class=" flex flex-col user mt-3 items-center mb-[.15rem] sm:invisible lg:visible">
+           <div class=" flex flex-col user mt-3 items-center mb-[.15rem] ">
             <img src="pic.jpg" alt="" class ="rounded-full  shadow-lg w-[158.4px] h-[160.4px]  mt-[8.8px] mb-[8.8px] dark:bg-[#222] bg-white border-[1.6px] border-[#0000001a]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333;  inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">
 
             <h3 class ="text-[24px] font-extrabold  mt-[.15rem] dark:text-white text-[#444444]">SOHAIB ALI</h3>
@@ -28,8 +50,8 @@
 
            <!-- Navbar -->
 
-           <nav class="navbar flex flex-col items-center lg:visible sm:invisible" id ="nav-bar">
-            <a href ="#Home" class ="dark:text-white text-[#444444]  text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl  bg-[#222]   mb-[.15rem]  border-[1.6px] border-[#0000001a] shadow-xl dark:shadow-[#333]  dark:hover:text-[#27ae60]" >Home</a>
+           <nav class="navbar flex flex-col items-center " >
+            <a href = "#Home" class ="dark:text-white text-[#444444]  text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl  bg-[#222]   mb-[.15rem]  border-[1.6px] border-[#0000001a] shadow-xl dark:shadow-[#333]  dark:hover:text-[#27ae60]" >Home</a>
             
             <a href ="#About" class ="dark:text-white text-[#444444] text-[24px] relative text-center w-[240.15px] h-[48px] mx-0 my-[13.2px]  p-[3.16px] rounded-3xl   shadow-lg  mb-[.15rem] hover:text-[#27ae60]" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff">About</a>
 
@@ -42,19 +64,7 @@
 
         </header>
 
-           <div id="menu-cross-btn" class ="hidden">
-                <i class = "fas fa-bars fa-times bg-none border-none text-white  text-[16px] pt-[10px]   fixed h-[3rem] lg:left-[1rem] text-center lg:top-[1.5rem] w-[3rem] sm:top-1 sm:left-0  z-[1000] rounded-[50%]  hidden" id="menu-bar" style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.4); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff"></i>
-           </div>
-
-           <div id="theme-toggler-m" class = "sun  ">
-                    <i class = "fas fa-moon fa-sun  bg-none  text-white text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] right-[1.5rem]  top-[1.5rem]   rounded-[50%] hover:cursor-pointer  hover:text-[#27ae60]     z-[1000] "  style="box-shadow: .4rem .4rem 1rem #111,-.4rem -.4rem 1rem #333; background: #222; border: .1rem solid rgba(0,0,0,0.1); inset: .4rem .4rem 1rem #111 inset,-.4rem -.4rem 1rem #333 inset; lighting-color: #ddd; black:#fff" >
-                    </i>    
-           </div>
-
-           <div id="theme-toggler-s" class = "moon ">
-            <i class = "fas fa-moon  bg-none  text-black text-center pt-[10px] text-[24px]  font-[900] fixed h-[3rem] w-[3rem] lg:right-[1.5rem] sm:right-0 lg:top-[1.5rem]  sm:top-0 rounded-[50%]   z-[1000] hover:cursor-pointer  hover:text-[#27ae60]" id="theme-toggler" style="box-shadow: .4rem .4rem 1rem #ccc,-.4rem -.4rem 1rem #fff; background:#e6e6e6 ; border: .1rem solid rgba(0,0,0,0.01); inset: .4rem .4rem 1rem #ccc inset,-.4rem -.4rem 1rem #fff inset; lighting-color: #777; black:#444" >
-                </i>    
-   </div>
+           
 
 
             
