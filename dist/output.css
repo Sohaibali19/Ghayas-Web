@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -590,10 +590,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .left-\[1\.5rem\] {
   left: 1.5rem;
 }
@@ -620,10 +616,6 @@ video {
 
 .z-\[1000\] {
   z-index: 1000;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .m-0 {
@@ -725,10 +717,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-\[10rem\] {
   height: 10rem;
 }
@@ -773,12 +761,12 @@ video {
   width: 100%;
 }
 
-.basis-\[50\%\] {
-  flex-basis: 50%;
-}
-
 .basis-\[24\%\] {
   flex-basis: 24%;
+}
+
+.basis-\[50\%\] {
+  flex-basis: 50%;
 }
 
 .border-collapse {
@@ -864,10 +852,6 @@ video {
 
 .border-\[1\.6px\] {
   border-width: 1.6px;
-}
-
-.border-8 {
-  border-width: 8px;
 }
 
 .border-t-2 {
@@ -1023,10 +1007,6 @@ video {
   font-size: 14.96px;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
-}
-
 .text-\[17\.6px\] {
   font-size: 17.6px;
 }
@@ -1152,21 +1132,44 @@ video {
   opacity: 1;
 }
 
+:is(.dark .dark\:border-\[\#222\]) {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 34 34 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:bg-\[\#222\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-neutral-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:shadow-\[\#333\]) {
+  --tw-shadow-color: #333;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:hover\:bg-\[\#27ae60\]:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 174 96 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:hover\:text-\[\#27ae60\]:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(39 174 96 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:visible {
     visibility: visible;
-  }
-
-  .sm\:invisible {
-    visibility: hidden;
-  }
-
-  .sm\:absolute {
-    position: absolute;
-  }
-
-  .sm\:sticky {
-    position: sticky;
   }
 
   .sm\:bottom-full {
@@ -1175,10 +1178,6 @@ video {
 
   .sm\:right-0 {
     right: 0px;
-  }
-
-  .sm\:top-0 {
-    top: 0px;
   }
 
   .sm\:m-\[\.25rem\] {
@@ -1249,10 +1248,6 @@ video {
     width: 100%;
   }
 
-  .sm\:basis-\[0\%\] {
-    flex-basis: 0%;
-  }
-
   .sm\:basis-\[100\%\] {
     flex-basis: 100%;
   }
@@ -1265,11 +1260,6 @@ video {
     border-left-width: 0px;
   }
 
-  .sm\:bg-orange-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-  }
-
   .sm\:p-0 {
     padding: 0px;
   }
@@ -1280,10 +1270,6 @@ video {
 
   .sm\:p-\[8\.6px\] {
     padding: 8.6px;
-  }
-
-  .sm\:p-6 {
-    padding: 1.5rem;
   }
 
   .sm\:px-\[160px\] {
@@ -1381,10 +1367,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:visible {
-    visibility: visible;
-  }
-
   .lg\:invisible {
     visibility: hidden;
   }
@@ -1397,24 +1379,12 @@ video {
     right: 0.25rem;
   }
 
-  .lg\:right-\[1\.5rem\] {
-    right: 1.5rem;
-  }
-
-  .lg\:top-\[1\.5rem\] {
-    top: 1.5rem;
-  }
-
   .lg\:top-\[100\%\] {
     top: 100%;
   }
 
   .lg\:m-\[0\.5rem\] {
     margin: 0.5rem;
-  }
-
-  .lg\:mb-\[1\.5rem\] {
-    margin-bottom: 1.5rem;
   }
 
   .lg\:mb-\[1rem\] {
@@ -1485,10 +1455,6 @@ video {
     width: 45rem;
   }
 
-  .lg\:basis-\[24\%\] {
-    flex-basis: 24%;
-  }
-
   .lg\:basis-\[50\%\] {
     flex-basis: 50%;
   }
@@ -1519,10 +1485,6 @@ video {
 
   .lg\:p-\[7\.4px\] {
     padding: 7.4px;
-  }
-
-  .lg\:p-\[1\.7rem\] {
-    padding: 1.7rem;
   }
 
   .lg\:px-\[270px\] {
@@ -1623,34 +1585,4 @@ video {
   .lg\:leading-\[1\.8rem\] {
     line-height: 1.8rem;
   }
-}
-
-:is(:where(.dark) .dark\:border-\[\#222\]) {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 34 34 / var(--tw-border-opacity));
-}
-
-:is(:where(.dark) .dark\:bg-\[\#222\]) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
-}
-
-:is(:where(.dark) .dark\:bg-neutral-800) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-}
-
-:is(:where(.dark) .dark\:text-white) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(:where(.dark) .dark\:shadow-\[\#333\]) {
-  --tw-shadow-color: #333;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-:is(:where(.dark) .dark\:hover\:text-\[\#27ae60\]:hover) {
-  --tw-text-opacity: 1;
-  color: rgb(39 174 96 / var(--tw-text-opacity));
 }

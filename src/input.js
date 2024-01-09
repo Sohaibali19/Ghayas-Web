@@ -91,19 +91,8 @@ themeCheck();
 //  }
 
 
-let ChangeIcon = function(icon){
-  icon.classList.toggle('fa-times');
-  
-}
-function mobileMenu(){
-if(document.getElementById('header').style.display == "block"){
-  document.getElementById('header').style.display = "none";
-}
-else{
-  document.getElementById('header').style.display = "block";
-}
-}
-document.getElementById('menu-btn').addEventListener('click', mobileMenu);
+
+
 
 
 
