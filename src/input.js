@@ -90,6 +90,8 @@ themeCheck();
 
 //  }
 
+
+// show or hide menu bar
 let header = document.getElementById('header');
 let  ChangeIcon = function(Icon){
   Icon.classList.toggle('fa-times');
@@ -99,13 +101,32 @@ let  ChangeIcon = function(Icon){
   else{
     header.style.display = 'block';
   }
-};
+  function scrollFunction() {
+ 
+    
+    document.getElementById("header").style.visibility = "hidden";
+  
+  // document.getElementById("header").style.visibility = "hidden"; 
+  //To hide the element.
 
-function scrollFunction() {
-  document.getElementById("header").style.visibility = "hidden";   //To hide the element.
 }
 
 window.onscroll = scrollFunction;
+};
+
+// scroll function
+// function scrollFunction(if (window.matchMedia('screen and (max-width: 767px)').matches) {
+ 
+    
+//       document.getElementById("header").style.visibility = "hidden";
+    
+//     // document.getElementById("header").style.visibility = "hidden"; 
+//     //To hide the element.
+  
+// })
+
+// window.onscroll = scrollFunction;
+
 
 
 
