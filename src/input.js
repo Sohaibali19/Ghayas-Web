@@ -90,6 +90,25 @@ themeCheck();
 
 //  }
 
+let header = document.getElementById('header');
+let  ChangeIcon = function(Icon){
+  Icon.classList.toggle('fa-times');
+  if(header.style.display == 'block') {
+    header.style.display ="none";
+  }
+  else{
+    header.style.display = 'block';
+  }
+};
+
+function scrollFunction() {
+  document.getElementById("header").style.visibility = "hidden";   //To hide the element.
+}
+
+window.onscroll = scrollFunction;
+
+
+
 
 
 

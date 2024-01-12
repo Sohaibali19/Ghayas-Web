@@ -4,9 +4,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      boxShadow: {
-
-      }
+      
     },
   },
   plugins: [],
@@ -15,4 +13,4 @@ module.exports = {
 
 
 
-// shadow-[.4rem_.4rem_1rem_#333,-.4rem_-.4rem_1rem_#ccc] hover:shadow-inner[.4rem_.4rem_1rem_#333,-.4rem_-.4rem_1rem_#ccc]
+
