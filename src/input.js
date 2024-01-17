@@ -97,22 +97,27 @@ let  ChangeIcon = function(Icon){
   Icon.classList.toggle('fa-times');
   if(header.style.display == 'block') {
     header.style.display ="none";
+    
   }
   else{
     header.style.display = 'block';
-  }
-  function scrollFunction() {
- 
     
-    document.getElementById("header").style.visibility = "hidden";
-  
-  // document.getElementById("header").style.visibility = "hidden"; 
-  //To hide the element.
+  }
 
 }
+//   function scrollFunction() {
+ 
+    
+//     document.getElementById("header").style.visibility = "hidden";
+   
+  
+//   // document.getElementById("header").style.visibility = "hidden"; 
+//   //To hide the element.
 
-window.onscroll = scrollFunction;
-};
+// }
+
+// window.onscroll = scrollFunction;
+// };
 
 // scroll function
 // function scrollFunction(if (window.matchMedia('screen and (max-width: 767px)').matches) {
@@ -128,16 +133,18 @@ window.onscroll = scrollFunction;
 // window.onscroll = scrollFunction;
 
 
+// (function () {
+
+//   window.addEventListener('scroll', () => {
+//     window.innerWidth <= 640 ? header.style.opacity = 0 : header.style.opacity = 1;
+//     }
+//   )
+// })();
 
 
-
-
-
-
-
-
-
-
-
+// indow.addEventListener('scroll', scrolled);
+//   function scrolled(){
+//     window.innerWidth >= 640 ? header.style.opacity = 0 : header.style.opacity = 1;
+//   }
 
 
