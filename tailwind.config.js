@@ -3,10 +3,9 @@ module.exports = {
   content: ["./dist/index.html", "./src/input.js"],
   darkMode: 'class',
   theme: {
-    screens : {
-      "sm" : '0px',
-      "lg" : '1024px',
-    }, 
+    screens: {
+      'sm': {'min' :'0px', 'max' : '1023px' },
+      'lg' : {'min' :'1024px' },
   
 }
  
@@ -15,4 +14,4 @@ module.exports = {
 }
 
 
-
+}
